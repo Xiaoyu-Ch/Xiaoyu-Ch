@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Xiaoyu Tom Chen. CS at the University of Michigan. ML safety and reliability research, computer vision, full-stack.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="55%" stop-color="#101a2e"/>
+      <stop offset="100%" stop-color="#0d1526"/>
+    </linearGradient>
+    <linearGradient id="pass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f3a5f" stop-opacity="0.25"/>
+      <stop offset="45%" stop-color="#3987e5" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#6cb0ff" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="stop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a2a1c" stop-opacity="0.25"/>
+      <stop offset="80%" stop-color="#d95926" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3987e5"/>
+      <stop offset="100%" stop-color="#3987e5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- faint engineering grid -->
+  <g stroke="#1b2740" stroke-width="1" opacity="0.5">
+    <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200"/>
+    <path d="M60 0V300M180 0V300M300 0V300M420 0V300M540 0V300M660 0V300M780 0V300M900 0V300M1020 0V300M1140 0V300"/>
+  </g>
+
+  <rect x="0" y="0" width="1200" height="4" fill="url(#rule)"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="64" y="118" font-size="46" font-weight="700" fill="#f2f6fb">Xiaoyu (Tom) Chen</text>
+    <text x="66" y="160" font-size="19" font-weight="600" fill="#8fb4e3">CS @ Michigan</text>
+    <text x="66" y="192" font-size="17" fill="#8e9db4">ML safety and reliability research · computer vision · full-stack</text>
+    <text x="66" y="226" font-size="15" fill="#64748b">Ann Arbor, MI · xiaoyc@umich.edu</text>
+  </g>
+
+  <!-- Motif: agent runs meeting a policy gate. Three pass, two are stopped. -->
+  <g transform="translate(792,42)">
+    <g fill="none" stroke-width="3" stroke-linecap="round">
+      <path d="M0 42 C 60 42, 80 62, 118 62 S 190 44, 330 44" stroke="url(#pass)"/>
+      <path d="M0 96 C 60 96, 80 106, 118 106 S 190 100, 330 100" stroke="url(#pass)"/>
+      <path d="M0 172 C 60 172, 78 150, 118 150 S 196 162, 330 162" stroke="url(#pass)"/>
+      <path d="M0 68 C 50 68, 78 84, 112 84" stroke="url(#stop)"/>
+      <path d="M0 142 C 50 142, 78 128, 112 128" stroke="url(#stop)"/>
+    </g>
+
+    <!-- the gate -->
+    <rect x="112" y="16" width="7" height="184" rx="3.5" fill="#2b3f5e"/>
+    <rect x="112" y="16" width="7" height="184" rx="3.5" fill="#3987e5" opacity="0.35"/>
+    <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif"
+       font-size="11" fill="#6b7f9c" letter-spacing="1.5">
+      <text x="98" y="214">POLICY</text>
+    </g>
+
+    <!-- blocked markers -->
+    <g stroke="#d95926" stroke-width="2.5" stroke-linecap="round">
+      <path d="M103 77 L117 91 M117 77 L103 91"/>
+      <path d="M103 121 L117 135 M117 121 L103 135"/>
+    </g>
+
+    <!-- passing runs land as results -->
+    <g fill="#6cb0ff">
+      <circle cx="330" cy="44" r="5"/>
+      <circle cx="330" cy="100" r="5"/>
+      <circle cx="330" cy="162" r="5"/>
+    </g>
+    <g fill="none" stroke="#6cb0ff" stroke-width="1.5" opacity="0.45">
+      <circle cx="330" cy="44" r="11"/>
+      <circle cx="330" cy="100" r="11"/>
+      <circle cx="330" cy="162" r="11"/>
+    </g>
+  </g>
+</svg>
